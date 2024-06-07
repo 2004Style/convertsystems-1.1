@@ -1,0 +1,40 @@
+.conertsystems {
+    height: 100vh;
+}
+
+.containercards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    max-height: calc(100vh - 20vh);
+    overflow-y: auto;
+    flex-wrap: wrap;
+    padding: 6vh;
+    gap: 6vh;
+}
+
+.containeranuncios {
+    display: flex;
+    max-height: calc(100vh - 20vh);
+    overflow-y: auto;
+    flex-wrap: wrap;
+    padding: 6vh;
+    gap: 6vh;
+}
+.containercontacto {
+    display: flex;
+    max-height: calc(100vh - 20vh);
+    padding: 6vh;
+}
+
+.containerinicio {
+    max-height: calc(100vh - 20vh);
+    width: 100%;
+}
+@media (max-width: 420px) {
+    .containeranuncios{
+        padding: 2vh;
+    }
+}
