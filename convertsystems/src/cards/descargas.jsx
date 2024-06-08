@@ -20,7 +20,7 @@ export function DescargaCardFree({ Id, Nombre, Direccion, DireccionAnuncio }) {
                         información
                         <a className='anclavermas' href={DireccionAnuncio}> aquí mismo.</a>
                     </div>
-                    <a className='btncomprar' href={direccionrecivida}><i className={`fa-solid fa-download customcompraicon`}></i>Descargar</a>
+                    <a className='btncomprar' href={direccionrecivida} download><i className={`fa-solid fa-download customcompraicon`}></i>Descargar</a>
                 </div>
             </div>
         </article>

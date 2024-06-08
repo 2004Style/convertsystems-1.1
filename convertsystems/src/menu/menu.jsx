@@ -31,7 +31,8 @@ export function Menu({ labelClas, setPagina }){
                 Icono="download"
                 submenus={[
                     { Nombre: 'Escritorio', Icono: 'desktop', onClick: () => handleClick(6) },
-                    { Nombre: "Celular", Icono: "mobile-screen-button", onClick: () => handleClick(6) },
+                    { Nombre: "Web", Icono: "cloud", onClick: () => handleClick(8) },
+                    { Nombre: "Consola", Icono: "terminal", onClick: () => handleClick(9) },
                 ]}
             />
             <SubMenu

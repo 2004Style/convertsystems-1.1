@@ -7,7 +7,7 @@ import { AnunciosContainer } from '../contenedores/anuncios';
 import { ProximamenteContainer } from '../contenedores/proximamente';
 import { OfertasContainer } from '../contenedores/ofertas';
 import { VentasContainer } from '../contenedores/ventas';
-import { DescargasContainer } from '../contenedores/descargas';
+import { DescargasContainerPc, DescargasContainerWeb, DescargasContainerConsola} from '../contenedores/descargas';
 import { ContactoContainer } from '../contenedores/contacto';
 
 
@@ -27,9 +27,13 @@ export function PaginaCs() {
             case 5:
                 return <VentasContainer />;
             case 6:
-                return <DescargasContainer />;
+                return <DescargasContainerPc />;
             case 7:
                 return <ContactoContainer />;
+            case 8:
+                return <DescargasContainerWeb />
+            case 9:
+                return <DescargasContainerConsola/>
             default:
                 return null;
         }
