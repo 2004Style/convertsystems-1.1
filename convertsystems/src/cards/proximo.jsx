@@ -1,5 +1,7 @@
 import React from 'react';
 
+const fondo = "https://firebasestorage.googleapis.com/v0/b/convertsystems-90dde.appspot.com/o/fondo.png?alt=media&token=72490825-f212-45a6-ab52-a12e3c4864a7"
+
 export function ProxCard({ Id, Nombre, Categoria, Dia, Mes, Año, Descripcion }) {
     const idmostrado = Id ? Id : 'null';
     const nombremostrado = Nombre ? Nombre : 'Producto Desconocido';
@@ -16,7 +18,7 @@ export function ProxCard({ Id, Nombre, Categoria, Dia, Mes, Año, Descripcion })
                         <p className="plcard-top-para">ConvertSystems</p>
                     </div>
 
-                    <img className="plfondo" src="../src/pictures/fondo.png" alt="..." />
+                    <img className="plfondo" src={fondo} alt="..." />
                     <div className="plpropertisfont">
                         <p className="plnombreproducto">{nombremostrado}</p>
                         <p className="plcategoria">Categoría: {categoriamostrado}</p>

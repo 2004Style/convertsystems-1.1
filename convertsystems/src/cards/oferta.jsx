@@ -1,5 +1,7 @@
 import { EstrellasDesing } from '../estrellas/estrellas'
 
+const fondo = "https://firebasestorage.googleapis.com/v0/b/convertsystems-90dde.appspot.com/o/fondo.png?alt=media&token=72490825-f212-45a6-ab52-a12e3c4864a7"
+
 export function OfertCard({ Id, Nombre, Porcentaje, Dias, Horas, Minutos, Precio, Direccion }) {
 
     const idmostrado = Id ? Id : 'null';
@@ -23,14 +25,14 @@ export function OfertCard({ Id, Nombre, Porcentaje, Dias, Horas, Minutos, Precio
             <div className="opentagono">
                 <div className="odescuento">{porcentajemostrado}%</div>
             </div>
-            <img className="ofondodescuento" src="../src/pictures/fondo.png" alt="" />
+            <img className="ofondodescuento" src={fondo} alt="" />
             <div className="ogroupinfoofertas">
                 <div className="onombreproducto">{nombremostrado}</div>
                 <div className="ocontainerestrellas">
                     <EstrellasDesing />
                 </div>
                 <div className="otiempolimite">{diamostrado} Días, {horamostrado} Horas, {minutomostrado} Minutos</div>
-                <div className="omasinformacion">Más información <a className="a" href="#">aquí mismo</a></div>
+                <div className="omasinformacion">Más información <a className="a">aquí mismo</a></div>
             </div>
             <div className="ocontainerprecioandboton">
                 <div className="oprecios">

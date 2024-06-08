@@ -1,5 +1,7 @@
 import { EstrellasDesing } from '../estrellas/estrellas'
 
+const fondo = "https://firebasestorage.googleapis.com/v0/b/convertsystems-90dde.appspot.com/o/fondo.png?alt=media&token=72490825-f212-45a6-ab52-a12e3c4864a7"
+
 export function VentaCard({ Id, Nombre, Precio, Direccion, DireccionAnuncio })
 {
     const idmostrado = Id ? Id : 'null';
@@ -14,7 +16,7 @@ export function VentaCard({ Id, Nombre, Precio, Direccion, DireccionAnuncio })
             <div className='cardbox'>
                 <span className='newspan'></span>
                 <span className='precio'>S/.{preciomostrado}</span>
-                <img className='logoproducto' src='../src/pictures/fondo.png' alt='...' />
+                <img className='logoproducto' src={fondo} alt='...' />
                 <div className='nameproducto'>{nombremostrado}</div>
                 <div className='contenedordeestrellas'>
                     <EstrellasDesing />
@@ -39,7 +41,7 @@ export function VentaCardOld({ Id, Nombre, Precio, Direccion, DireccionAnuncio }
             <div className='containerproductcard' id={`#${idmostrado}`}>
                 <div className='cardbox'>
                     <span className='precio'>S/.{preciomostrado}</span>
-                    <img className='logoproducto' src='../src/pictures/fondo.png' alt='...' />
+                    <img className='logoproducto' src={fondo} alt='...' />
                     <div className='nameproducto'>{nombremostrado}</div>
                     <div className='contenedordeestrellas'>
                         <EstrellasDesing />

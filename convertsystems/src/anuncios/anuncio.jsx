@@ -1,20 +1,20 @@
 import { EstrellasDesing } from "../estrellas/estrellas"
 import { Aimagenescarrusel } from "./carruselimagenes";
+const logo = "https://firebasestorage.googleapis.com/v0/b/convertsystems-90dde.appspot.com/o/logo.png?alt=media&token=3086e5fa-3fb6-4581-946e-a8291f473f29"
 
-export function DisenioAnuncio({ Id, Nombre, DireccionVenta, srcimagenes, requisistossistema, requisitospreintalacion, pasosdeintalacion }) {
+export function DisenioAnuncio({ Id, Nombre, srcimagenes, requisistossistema, requisitospreintalacion, pasosdeintalacion }) {
     const idmostrado = Id ? Id : 'null';
     const nombremostrado = Nombre ? Nombre : 'Producto Desconocido';
-    const direccionmostrado = DireccionVenta ? DireccionVenta : '';
 
     return (
         <div className="contenedoranucios" id={`#${idmostrado}`}>
             <div className="acabecera">
-                <img className="aicon" src="../src/pictures/logo.png" alt="" />
+                <img className="aicon" src={logo} alt="" />
                 <div className="acontainernc">
                     <div className="anombre">{nombremostrado}</div>
                     <div className="acontainereyd">
                         <EstrellasDesing />
-                        <a className="btniracomprar" href={direccionmostrado}>
+                        <a className="btniracomprar" href="#">
                             <span className="iracoprar">ir a comprar</span>
                         </a>
                     </div>

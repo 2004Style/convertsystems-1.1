@@ -1,13 +1,17 @@
 import '../inicio.css'
+
+const backgraund = "https://firebasestorage.googleapis.com/v0/b/convertsystems-90dde.appspot.com/o/index.png?alt=media&token=553b5b26-6983-4b23-abad-16c2beff30e1"
+const logotipo = "https://firebasestorage.googleapis.com/v0/b/convertsystems-90dde.appspot.com/o/logosinfondo.png?alt=media&token=e127b3e2-df97-4417-8197-19256590a9c6"
+
 export function Inicio(){
     //resolucion para la imagen del fondo  3840x2160
     return(
         <>
             <div className="bg">
-                <img src="../src/pictures/index.png" alt="Background Image" className="bg-image"></img>
+                <img src={backgraund} alt="Background Image" className="bg-image"></img>
             </div>
             <div className="container">
-                <img className="containerlogo" src="../src/pictures/logosinfondo.png" alt=""/>
+                <img className="containerlogo" src={logotipo} alt=""/>
                     <div id="pyramid-small">
                         <div className="pyram-small one s1"></div>
                         <div className="pyram-small two s2"></div>
