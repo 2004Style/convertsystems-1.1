@@ -10,4 +10,4 @@ export function OfertasContainer() {
             <OfertCard Nombre='producto anonimo' Porcentaje='45' Dias='3' Horas='3' Minutos='30' Precio='100' />
         </div>
     )
-};
+}

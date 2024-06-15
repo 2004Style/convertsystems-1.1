@@ -1,3 +1,4 @@
+// eslint-disable-next-line react/prop-types
 export function OptionSubmenu({ TipoIcono, Icono, Nombre, onClick}) {
     const nombreMostrado = Nombre ? Nombre : 'Opcion';
     const tipoiconomostrado = TipoIcono ? TipoIcono : 'solid';

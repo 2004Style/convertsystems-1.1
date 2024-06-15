@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import { Menu } from '../menu/menu';
 import { Copyright } from '../menu/copy';

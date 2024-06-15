@@ -1,7 +1,9 @@
+/* eslint-disable react/prop-types */
 import { EstrellasDesing } from "../estrellas/estrellas"
 import { Aimagenescarrusel } from "./carruselimagenes";
 const logo = "https://firebasestorage.googleapis.com/v0/b/convertsystems-90dde.appspot.com/o/logo.png?alt=media&token=3086e5fa-3fb6-4581-946e-a8291f473f29"
 
+// eslint-disable-next-line react/prop-types
 export function DisenioAnuncio({ Id, Nombre, srcimagenes, requisistossistema, requisitospreintalacion, pasosdeintalacion }) {
     const idmostrado = Id ? Id : 'null';
     const nombremostrado = Nombre ? Nombre : 'Producto Desconocido';

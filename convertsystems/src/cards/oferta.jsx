@@ -2,6 +2,7 @@ import { EstrellasDesing } from '../estrellas/estrellas'
 
 const fondo = "https://firebasestorage.googleapis.com/v0/b/convertsystems-90dde.appspot.com/o/fondo.png?alt=media&token=72490825-f212-45a6-ab52-a12e3c4864a7"
 
+// eslint-disable-next-line react/prop-types
 export function OfertCard({ Id, Nombre, Porcentaje, Dias, Horas, Minutos, Precio, Direccion }) {
 
     const idmostrado = Id ? Id : 'null';

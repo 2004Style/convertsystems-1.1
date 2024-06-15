@@ -1,3 +1,4 @@
+// eslint-disable-next-line react/prop-types
 export function OpcionMenu({ TipoIcono, Icono, Nombre, onClick}) {
     const nombremostrado = Nombre ? Nombre : 'Opcion';
     const tipoiconomostrado = TipoIcono ? TipoIcono : 'solid';

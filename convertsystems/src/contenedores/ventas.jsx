@@ -8,4 +8,4 @@ export function VentasContainer() {
             <VentaCard Id='6' Nombre='producto anonimo' Precio='45.00' />
         </div>
     )
-};
+}

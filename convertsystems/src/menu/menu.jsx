@@ -1,6 +1,7 @@
 import { OpcionMenu } from "./opcionesmenu";
 import { SubMenu } from "./submenu";
 import { DesingConfig } from "../configuracionesgenerales/ajustes";
+// eslint-disable-next-line react/prop-types
 export function Menu({ labelClas, setPagina }){
     const handleClick = (pagina) => {
         setPagina(pagina);

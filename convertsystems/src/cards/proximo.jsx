@@ -1,7 +1,9 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 
 const fondo = "https://firebasestorage.googleapis.com/v0/b/convertsystems-90dde.appspot.com/o/fondo.png?alt=media&token=72490825-f212-45a6-ab52-a12e3c4864a7"
 
+// eslint-disable-next-line react/prop-types
 export function ProxCard({ Id, Nombre, Categoria, Dia, Mes, Año, Descripcion }) {
     const idmostrado = Id ? Id : 'null';
     const nombremostrado = Nombre ? Nombre : 'Producto Desconocido';

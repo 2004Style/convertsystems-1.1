@@ -1,6 +1,8 @@
+/* eslint-disable react/prop-types */
 import { useState } from 'react';
 import { OptionSubmenu } from "./SubMenuOption";
 
+// eslint-disable-next-line react/prop-types, no-unused-vars
 export function SubMenu({ TipoIcono, Icono, Nombre, submenus, onClick }) {
     const [subMenuVisible, setSubMenuVisible] = useState(false);
 

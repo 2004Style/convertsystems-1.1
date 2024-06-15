@@ -1,6 +1,8 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 
-export function Copyright({labelClas}) {
+// eslint-disable-next-line no-unused-vars, react/prop-types
+export function Copyright() {
     const currentYear = new Date().getFullYear();
 
     return (

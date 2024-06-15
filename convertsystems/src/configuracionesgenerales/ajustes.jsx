@@ -1,7 +1,9 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react';
 import { CambiarPropiedades } from './cambiarpropiedades';
 import { Cambiartamaño } from './agrandartext';
 
+// eslint-disable-next-line react/prop-types
 export function DesingConfig({ labelClass }) {
     const [currentClass, setCurrentClass] = useState(labelClass);
 

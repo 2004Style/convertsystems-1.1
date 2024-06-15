@@ -22,7 +22,7 @@ export function DescargasContainerPc() {
             <DescargaCardFreeOld Id='2' />
         </div>
     )
-};
+}
 export function DescargasContainerWeb() {
     return (
         <div className='containercards'>
@@ -33,7 +33,7 @@ export function DescargasContainerWeb() {
             <DescargaCardFreeOld Id='2' />
         </div>
     )
-};
+}
 export function DescargasContainerConsola() {
     return (
         <div className='containercards'>
@@ -43,4 +43,4 @@ export function DescargasContainerConsola() {
             <DescargaCardFreeOld Id='2' />
         </div>
     )
-};
+}

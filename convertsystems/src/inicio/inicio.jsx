@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect } from 'react';
 import '../inicio.css';
 
@@ -64,7 +65,7 @@ export function Inicio() {
     }
 
     class Tentacle {
-        constructor(x, y, l, n, a) {
+        constructor(x, y, l, n) {
             this.x = x;
             this.y = y;
             this.l = l;
@@ -204,7 +205,7 @@ export function Inicio() {
                 loop();
             });
         };
-    }, []);
+    },);
 
     return (
         <>
