@@ -5,7 +5,7 @@
     --colorletrasmenu: #595C5F;
     --colorhovermenuysubmenu: white;
     --colorlime: #07df00;
-    --colorwhite: #ffffff;
+    --colorwhite: rgb(255, 255, 255)fff;
     --coloblack: #000000;
     --color_red: #d80000;
     --color_orange: #FC4100;
@@ -16,64 +16,65 @@
     --backgroundimagemarca: linear-gradient(-40deg, transparent 0%, transparent 40%, white 50%, transparent 60%, transparent 100%);
 
     colores temas blancos
-    --backgroudpagina: #ebebeb;
-    --backgroudmenus: #00505e;
-    -colorletrasmenu: #d1d1d1;
+    --backgroudpagina: rgb(235, 235, 235);
+    --backgroudmenus: rgb(0, 80, 94);
+    -colorletrasmenu: rgb(209, 209, 209);
     --colorhovermenuysubmenu: rgb(0, 0, 0);
         
     */
     /*colores basicos de la pagina y menus*/
-    --backgroudpagina: #1A1C20;
-    --backgroudmenus: #212529;
-    --colorletrasmenu: #c2c2c5;
-    --colorhovermenuysubmenu: #008fa8;
+    --backgroudpagina: rgb(26, 28, 32);
+    --backgroudmenus: rgb(33, 37, 41);
+    --colorletrasmenu: rgb(194, 194, 197);
+    --colorhovermenuysubmenu: rgb(0, 143, 168);
     --ancho_del_menu: 33vh;
     --alturavar: 8vh;
     --fontsize_menu: 2.5vh;
     /*colores generales usados*/
-    --colorlime: #07df00;
-    --colorwhite: #ffffff;
-    --coloblack: #000000;
-    --color_red: #d80000;
-    --color_orange: #FC4100;
+    --colorlime: rgb(7, 223, 0);
+    --colorwhite: rgb(255, 255, 255);
+    --coloblack: rgb(0, 0, 0);
+    --color_red: rgb(216, 0, 0);
+    --color_orange: rgb(252, 65, 0);
     --fontsize: 2vh;
     /*estilos para el copy */
-    --backgroudcopy: #343A40;
-    --colorcopy: #6C757D;
-    --alturadelcopy:10vh;
+    --backgroudcopy: rgb(52, 58, 64);
+    --colorcopy: rgb(108, 117, 125);
+    --alturadelcopy: 10vh;
 
     /*color de la marca de la parte del nav*/
     --colormarca: rgba(255, 255, 255, 0.418);
-    --backgroundmarca: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, white)) 0 0 no-repeat;
+    --backgroundmarca: rgb(34, 34, 34) -webkit-gradient(linear, left top, right top, from(rgb(34, 34, 34)), to(rgb(34, 34, 34)), color-stop(0.5, white)) 0 0 no-repeat;
     --backgroundimagemarca: linear-gradient(-40deg, transparent 0%, transparent 40%, white 50%, transparent 60%, transparent 100%);
 
     /*colores usados para inicio*/
     /*colores usados para anuncios*/
 
     /*color de las estrellas*/
-    --estrellas_pintadas: #ffbb00;
-    --estrellas_despintadas: #ffffff;
+    --estrellas_pintadas: rgb(255, 187, 0);
+    --estrellas_despintadas: rgb(255, 255, 255);
     /*tamaño de las cartas*/
     --alturadecards: 57vh;
     --anchodecards: 40vh;
     /*colores generales para todas las cartas*/
     --boxshadowdecartas: 0 1vh 1.5vh rgba(0, 0, 0, 0.55);
     --backgrounddecartas: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
-    --cards_color_lime: #07df00;
-    --cards_color_white: #ffffff;
-    --cards_color_black: #000000;
+    --cards_color_lime: rgb(7, 223, 0);
+    --cards_color_white: rgb(255, 255, 255);
+    --cards_color_black: rgb(0, 0, 0);
     /*colores exclusivos para la carta ventas*/
     --card_ventas_hover_aqui_mismo: color-mix(in srgb, var(--cards_color_lime) 70%, white);
     /*colores exclisivos para ventas y ofertas*/
     --card_ventas_ofertas_degradado_oscuro: color-mix(in srgb, var(--cards_color_lime) 25%, black);
     /*colores exclusivos para la carta ofertas*/
-    --card_ofertas_color_red:#d80000;
+    --card_ofertas_color_red: rgb(216, 0, 0);
     /*colores exclisivos para proximamente y ofertas*/
-    --card_ofertas_color_orange:#FC4100;
+    --card_ofertas_color_orange: rgb(252, 65, 0);
     /*colores exclusivos para la carta proximamente*/
-    --card_proximamente_hover:#0486ff;
+    --card_proximamente_hover: rgb(4, 134, 255);
     /*colores usados para contactanos*/
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -199,7 +200,8 @@ body {
     font-size: 2.3vh;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;/* Para mostrar puntos suspensivos (...) cuando el texto se desborde */
+    text-overflow: ellipsis;
+    /* Para mostrar puntos suspensivos (...) cuando el texto se desborde */
 }
 
 .nombreuser:hover {
@@ -210,7 +212,8 @@ body {
     color: var(--coloblack);
     overflow: visible;
     white-space: normal;
-    text-overflow: initial;/* Restaurar la configuración predeterminada de text-overflow */
+    text-overflow: initial;
+    /* Restaurar la configuración predeterminada de text-overflow */
 }
 
 @media (max-width: 900px) {
@@ -437,6 +440,7 @@ body {
         float: left;
     }
 }
+
 /*resolucion para las imagenes de anucios un alto de 450 px*/
 .swiper {
     width: 100%;
@@ -463,18 +467,20 @@ body {
     width: 2.5vh;
     height: 2.5vh;
 }
-.alist{
+
+.alist {
     display: flex;
     flex-direction: column;
     gap: 3vh;
     font-weight: bold;
 }
+
 .lineaneon {
     width: 100%;
     height: 0.3vh;
     left: 0;
     transform: translateY(-50%);
-    background: linear-gradient(to left, #ff00ff, #ff007f, #ff0000, #ff7f00, #ffff00, #7fff00, #00ff00, #00ff7f, #00ffff, #007fff, #0000ff, #7f00ff, #ff00ff);
+    background: linear-gradient(to left, rgb(255, 0, 255), rgb(255, 0, 127), rgb(255, 0, 0), rgb(255, 127, 0), rgb(255, 255, 0), rgb(127, 255, 0), rgb(0, 255, 0), rgb(0, 255, 127), rgb(0, 255, 255), rgb(0, 127, 255), rgb(0, 0, 255), rgb(127, 0, 255), rgb(255, 0, 255));
     background-size: 300% 100%;
     animation: neonLine 6s linear infinite;
 }
@@ -488,22 +494,26 @@ body {
         background-position: 0% 50%;
     }
 }
-.aenlacesdeintalacion{
+
+.aenlacesdeintalacion {
     display: flex;
     flex-direction: column;
     gap: 3vh;
 }
-.acontenidoenlacesi{
+
+.acontenidoenlacesi {
     padding-left: 3vh;
     text-decoration: none;
     color: var(--colorwhite);
     font-weight: bold;
 }
-.afuncionamiento{
+
+.afuncionamiento {
     display: flex;
     gap: 3vh;
     flex-direction: column;
 }
+
 .wrapper {
     display: inline-flex;
     list-style: none;
@@ -513,7 +523,7 @@ body {
 
 .wrapper .icon {
     position: relative;
-    background: #fff;
+    background: rgb(255, 255, 255);
     color: black;
     border-radius: 50%;
     margin: 10px;
@@ -533,8 +543,8 @@ body {
     position: absolute;
     top: 0;
     font-size: 14px;
-    background: #fff;
-    color: #fff;
+    background: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     padding: 5px 8px;
     border-radius: 5px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -548,7 +558,7 @@ body {
     content: "";
     height: 8px;
     width: 8px;
-    background: #fff;
+    background: rgb(255, 255, 255);
     bottom: -3px;
     left: 50%;
     transform: translate(-50%) rotate(45deg);
@@ -570,22 +580,22 @@ body {
 .wrapper .facebook:hover,
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
-    background: #1877f2;
-    color: #fff;
+    background: rgb(24, 119, 242);
+    color: rgb(255, 255, 255);
 }
 
 .wrapper .tiktok:hover,
 .wrapper .tiktok:hover .tooltip,
 .wrapper .tiktok:hover .tooltip::before {
-    background: #ff0000;
-    color: #ffffff;
+    background: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
-    background: #e4405f;
-    color: #fff;
+    background: rgb(228, 64, 95);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -599,7 +609,7 @@ body {
     justify-content: center;
 }
 
-.cardbox {
+.cardventa {
     height: var(--alturadecards);
     width: var(--anchodecards);
     background: var(--backgrounddecartas);
@@ -610,11 +620,11 @@ body {
     transform: scale(1);
 }
 
-.cardbox:hover {
+.cardventa:hover {
     transform: scale(1.05);
 }
 
-.cardbox .newspan {
+.cardventa .newspan {
     position: absolute;
     overflow: hidden;
     width: 22vh;
@@ -626,12 +636,12 @@ body {
     justify-content: center;
 }
 
-.cardbox .newspan::before {
+.cardventa .newspan::before {
     content: 'Nuevo';
     position: absolute;
     width: 150vh;
     height: 6vh;
-    background-image: linear-gradient(45deg, #000000 30%, var(--cards_color_lime) 51%, #000a00 70%);
+    background-image: linear-gradient(45deg, rgb(0, 0, 0) 30%, var(--cards_color_lime) 51%, rgb(0, 0, 0) 70%);
     transform: rotate(-45deg) translateY(-3vh);
     display: flex;
     align-items: center;
@@ -647,7 +657,7 @@ body {
     -o-transform: rotate(-45deg) translateY(-3vh);
 }
 
-.cardbox .newspan::after {
+.cardventa .newspan::after {
     content: '';
     position: absolute;
     width: 1.5vh;
@@ -663,13 +673,9 @@ body {
 .precio {
     position: absolute;
     top: 0;
-    /*Posicionaenlapartesuperior*/
     right: 0;
-    /*Posicionaenelextremoderecho*/
     width: 10vh;
-    /*Anchode5vh*/
     height: 6vh;
-    /*Altode4vh*/
     background: var(--cards_color_lime);
     color: var(--cards_color_black);
     display: flex;
@@ -795,13 +801,9 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    /* Posiciona el botón de forma absoluta */
     left: 28%;
-    /* Lo centra horizontalmente en su contenedor */
     transform: translateX(-50%);
-    /* Ajusta para centrarlo exactamente */
     bottom: 2.7vh;
-    /* Establece la distancia desde el borde inferior */
     width: 44%;
     height: 5.5vh;
     text-decoration: none;
@@ -982,7 +984,6 @@ body {
 }
 
 /*estilos para la pagina de ofertas*/
-
 .ocard {
     cursor: default;
     color: var(--cards_color_white);
@@ -1173,7 +1174,7 @@ body {
     height: 0vh;
     width: 0vh;
     overflow: hidden;
-    background: #ffffff3f;
+    background: rgba(255, 255, 255, 0.247);
     backdrop-filter: blur(5px);
     flex-direction: column;
     gap: 1vh;
@@ -1307,9 +1308,9 @@ body {
     cursor: pointer;
     width: 20vh;
     height: 5vh;
-    background: #ffffff59;
+    background: rgba(255, 255, 255, 0.349);
     backdrop-filter: blur(5px);
-    border: 0.1vh solid #e2e2e2;
+    border: 0.1vh solid rgb(226, 226, 226);
     transition: all 0.2s ease;
     font-size: 2.5vh;
     font-weight: 600;
@@ -1317,7 +1318,7 @@ body {
 }
 
 .btncambiarpropiedades:hover {
-    background: #acacaca4;
+    background: rgba(172, 172, 172, 0.643);
     backdrop-filter: blur(5px);
 }
 
@@ -1382,12 +1383,116 @@ body {
     gap: 1rem;
     padding: 1rem;
     border-radius: 2vh;
-    border: 0.1vh solid #e5e8eb;
-    background: #ffffff59;
+    border: 0.1vh solid rgb(229, 232, 235);
+    background: rgba(255, 255, 255, 0.349);
     backdrop-filter: blur(5px);
-    box-shadow: 0vh 0.1vh 0.2vh 0vh #0000001f;
+    box-shadow: 0vh 0.1vh 0.2vh 0vh rgba(0, 0, 0, 0.122);
 }
 
 .barravalue {
     font-weight: 600;
+}
+
+/*diseño del apartado de contacto*/
+.contactform {
+    position: relative;
+    background: linear-gradient(rgb(33, 33, 33), rgb(33, 33, 33)) padding-box,
+        linear-gradient(145deg, transparent 35%, lime, rgb(0, 112, 139)) border-box;
+    border: 0.3vh solid transparent;
+    padding: 5vh;
+    font-size: 3vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    box-sizing: border-box;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+    box-shadow: var(--boxshadowdecartas);
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.contactform .btnenviarcorreo:active {
+    scale: 0.95;
+}
+
+.contactform .formcontacto {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+}
+
+.contactform .contactformgrup {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+}
+
+.contactform .contactformgrup .titulosContact {
+    display: flex;
+    margin-bottom: 1vh;
+    font-weight: 600;
+    font-size: 2vh;
+}
+
+.contactform .contactformgrup .imputcontact {
+    padding: 2vh;
+    border-radius: 1vh;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 0.2vh solid rgb(65, 65, 65);
+    font-size: 2vh;
+}
+
+.contactform .contactformgrup .textareacontac {
+    padding: 2vh;
+    border-radius: 2vh;
+    color: rgb(255, 255, 255);
+    height: 36vh;
+    border: 0.2vh solid rgb(65, 65, 65);
+    background-color: transparent;
+    font-size: 2vh;
+}
+
+.contactform .contactformgrup .imputcontact::placeholder {
+    opacity: 0.5;
+}
+
+.contactform .contactformgrup .imputcontact:focus {
+    outline: none;
+    border-color: lime;
+}
+
+.contactform .contactformgrup .textareacontac:focus {
+    outline: none;
+    border-color: lime;
+}
+
+.contactform .btnenviarcorreo {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    background: var(--backgrounddecartas);
+    border: 0.2vh solid rgb(65, 65, 65);
+    padding: 2vh 3vh;
+    font-size: 3vh;
+    gap: 2vh;
+    margin-top: 1vh;
+    cursor: pointer;
+    border-radius: 1vh;
 }

@@ -7,32 +7,32 @@ export function Menu({ labelClas, setPagina }){
     };
     return(
         <div className="menu">
-            <OpcionMenu TipoIcono='' Icono='house' Nombre="Inicio" onClick={() => handleClick(1)}/>
-            <OpcionMenu TipoIcono='' Icono='bell' Nombre='Anuncios' onClick={() => handleClick(2)}/>
-            <OpcionMenu TipoIcono='' Icono='diagram-next' Nombre='Proximamente' onClick={() => handleClick(3)}/>
+            <OpcionMenu TipoIcono='' Icono='house' Nombre="Inicio" onClick={() => handleClick('home')}/>
+            <OpcionMenu TipoIcono='' Icono='bell' Nombre='Anuncios' onClick={() => handleClick('anuncios')}/>
+            <OpcionMenu TipoIcono='' Icono='diagram-next' Nombre='Proximamente' onClick={() => handleClick('proximos')}/>
             <SubMenu
                 Nombre="Ofertas"
                 Icono="tags"
                 submenus={[
-                    { Nombre: 'Escritorio', Icono: 'desktop', onClick: () => handleClick(4) },
-                    { Nombre: "Celular", Icono: "mobile-screen-button", onClick: () => handleClick(4) },
+                    { Nombre: 'Escritorio', Icono: 'desktop', onClick: () => handleClick('ofertas') },
+                    { Nombre: "Celular", Icono: "mobile-screen-button", onClick: () => handleClick('ofertas') },
                 ]}
             />
             <SubMenu
                 Nombre="Tienda"
                 Icono="shop"
                 submenus={[
-                    { Nombre: 'Escritorio', Icono: 'desktop', onClick: () => handleClick(5) },
-                    { Nombre: "Celular", Icono: "mobile-screen-button", onClick: () => handleClick(5) },
+                    { Nombre: 'Escritorio', Icono: 'desktop', onClick: () => handleClick('shop') },
+                    { Nombre: "Celular", Icono: "mobile-screen-button", onClick: () => handleClick('shop') },
                 ]}
             />
             <SubMenu
                 Nombre="Productos Gratis"
                 Icono="download"
                 submenus={[
-                    { Nombre: 'Escritorio', Icono: 'desktop', onClick: () => handleClick(6) },
-                    { Nombre: "Web", Icono: "cloud", onClick: () => handleClick(8) },
-                    { Nombre: "Consola", Icono: "terminal", onClick: () => handleClick(9) },
+                    { Nombre: 'Escritorio', Icono: 'desktop', onClick: () => handleClick('freepc') },
+                    { Nombre: "Web", Icono: "cloud", onClick: () => handleClick('freeweb') },
+                    { Nombre: "Consola", Icono: "terminal", onClick: () => handleClick('freeconsola') },
                 ]}
             />
             <SubMenu
@@ -45,7 +45,7 @@ export function Menu({ labelClas, setPagina }){
                     { Direccion: "", Nombre: "Instagram", TipoIcono: "brands", Icono: "instagram" },
                 ]}
             />
-            <OpcionMenu TipoIcono='' Icono='envelope' Nombre="Contactanos" onClick={() => handleClick(7)} />
+            <OpcionMenu TipoIcono='' Icono='envelope' Nombre="Contactanos" onClick={() => handleClick('contact')} />
 
             <DesingConfig labelClass={labelClas} />
         </div>

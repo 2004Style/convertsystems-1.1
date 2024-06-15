@@ -12,27 +12,27 @@ import { ContactoContainer } from '../contenedores/contacto';
 
 
 export function PaginaCs() {
-    const [pagina, setPagina] = useState(1); // Empezar con la página 1
+    const [pagina, setPagina] = useState('home'); // Empezar con la página 1
 
     const renderizarContenedor = () => {
         switch (pagina) {
-            case 1:
+            case 'home':
                 return <InicioContainer />;
-            case 2:
+            case 'anuncios':
                 return <AnunciosContainer />;
-            case 3:
+            case 'proximos':
                 return <ProximamenteContainer />; 
-            case 4:
+            case 'ofertas':
                 return <OfertasContainer />;
-            case 5:
+            case 'shop':
                 return <VentasContainer />;
-            case 6:
+            case 'freepc':
                 return <DescargasContainerPc />;
-            case 7:
+            case 'contact':
                 return <ContactoContainer />;
-            case 8:
+            case 'freeweb':
                 return <DescargasContainerWeb />
-            case 9:
+            case 'freeconsola':
                 return <DescargasContainerConsola/>
             default:
                 return null;

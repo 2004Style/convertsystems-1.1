@@ -9,7 +9,7 @@ export function DescargaCardFree({ Id, Nombre, Direccion, DireccionAnuncio }) {
     return (
         <article>
             <div className='containerproductcard' id={`#${idmostrado}`}>
-                <div className='cardbox'>
+                <div className='cardventa'>
                     <span className='newspan'></span>
                     <img className='logoproducto' src={fondo} alt='...' />
                     <div className='nameproducto'>{nombremostrado}</div>
@@ -33,7 +33,7 @@ export function DescargaCardFreeOld({ Id, Nombre, Direccion, DireccionAnuncio })
     return (
         <article>
             <div className='containerproductcard' id={`#${idmostrado}`}>
-                <div className='cardbox'>
+                <div className='cardventa'>
                     <img className='logoproducto' src={fondo} alt='...' />
                     <div className='nameproducto'>{nombremostrado}</div>
                     <div className='contenedordeestrellas'>

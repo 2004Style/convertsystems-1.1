@@ -13,7 +13,7 @@ export function VentaCard({ Id, Nombre, Precio, Direccion, DireccionAnuncio })
 
     return (
         <div className='containerproductcard' id={`#${idmostrado}`}>
-            <div className='cardbox'>
+            <div className='cardventa'>
                 <span className='newspan'></span>
                 <span className='precio'>S/.{preciomostrado}</span>
                 <img className='logoproducto' src={fondo} alt='...' />
@@ -39,7 +39,7 @@ export function VentaCardOld({ Id, Nombre, Precio, Direccion, DireccionAnuncio }
     return (
         <article>
             <div className='containerproductcard' id={`#${idmostrado}`}>
-                <div className='cardbox'>
+                <div className='cardventa'>
                     <span className='precio'>S/.{preciomostrado}</span>
                     <img className='logoproducto' src={fondo} alt='...' />
                     <div className='nameproducto'>{nombremostrado}</div>
