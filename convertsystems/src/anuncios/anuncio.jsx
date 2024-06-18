@@ -15,7 +15,9 @@ export function DisenioAnuncio({ Id, Nombre, srcimagenes, requisistossistema, re
                 <div className="acontainernc">
                     <div className="anombre">{nombremostrado}</div>
                     <div className="acontainereyd">
-                        <EstrellasDesing />
+                        <div className="containerestrellas">
+                            <EstrellasDesing />
+                        </div>
                         <a className="btniracomprar" href="#">
                             <span className="iracoprar">ir a comprar</span>
                         </a>

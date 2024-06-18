@@ -75,10 +75,25 @@
     /*colores usados para contactanos*/
 }
 
+*{
+    font-family: system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        "Noto Sans",
+        "Liberation Sans",
+        Arial,
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji";
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto';
     background: var(--backgroudpagina);
 }
 
@@ -216,13 +231,13 @@ body {
     /* Restaurar la configuración predeterminada de text-overflow */
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 767px) {
     .nombreuser {
         right: 8.5vw;
     }
 }
 
-@media (max-width: 670px) {
+@media only screen and (max-width: 767px) {
     .nombreuser {
         display: none;
     }
@@ -248,7 +263,6 @@ body {
 .desingmenu {
     width: 0vh;
     z-index: 99;
-    position: absolute;
     transition: width 0.5s ease;
 }
 
@@ -312,7 +326,7 @@ body {
 }
 
 .pagina {
-    flex-grow: 1;
+    flex: 1;
     display: flex;
     position: relative;
     height: calc(100vh - var(--alturavar));
@@ -1121,8 +1135,8 @@ body {
     position: absolute;
     border-radius: 50%;
     height: 8vh;
-    width: 2vh;
-    bottom: -0.5vh;
+    width: 8vh;
+    bottom: 2vh;
     right: 2vh;
 }
 
@@ -1139,7 +1153,7 @@ body {
     bottom: 0;
     left: 0;
     z-index: 300;
-    rotate: 90deg;
+    transform: rotate(90deg);
     background: var(--colorlime);
     display: flex;
     align-items: center;
@@ -1149,10 +1163,23 @@ body {
     padding: 2vh;
     cursor: pointer;
     color: var(--coloblack);
+    animation: iconrotateconfig 2s linear infinite;
 }
 
-.config:hover .iconconfig {
-    transform: rotate(120deg);
+.config:hover {
+    /*animation-play-state: paused;*/
+    animation: iconrotateconfig 4s linear infinite;
+    
+}
+
+@keyframes iconrotateconfig {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .iconconfig {
@@ -1163,7 +1190,7 @@ body {
 }
 
 .configcontainer {
-    padding: 0vh;
+    padding: 3vh;
     position: absolute;
     z-index: 99;
     bottom: 0;
@@ -1178,38 +1205,25 @@ body {
     backdrop-filter: blur(5px);
     flex-direction: column;
     gap: 1vh;
+    opacity: 0;
     color: var(--coloblack);
 }
 
 @keyframes expandcontaineroptionsconfig {
     0% {
-        bottom: 20vh;
-        left: 35vh;
-        height: 0vh;
-        width: 0vh;
-    }
-
-    28% {
-        bottom: 0;
-        left: 0;
-        height: 0vh;
-        width: 0vh;
-    }
-
-    29% {
-        padding: 3vh;
-        bottom: 0;
-        left: 0;
         height: calc(50vh - 6vh);
         width: calc(50vh - 6vh);
     }
-
+    49%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
     100% {
-        padding: 3vh;
-        bottom: 0;
-        left: 0;
         height: calc(50vh - 6vh);
         width: calc(50vh - 6vh);
+        opacity: 1;
     }
 }
 
@@ -1219,19 +1233,17 @@ body {
         width: 4vh;
     }
 
-    20% {
+    55% {
         height: calc(50vh - 4vh);
         width: calc(50vh - 4vh);
         border-radius: 0%;
     }
 
-    30% {
+
+    60% {
         height: calc(50vh - 4vh);
         width: calc(50vh - 4vh);
         border-radius: 0%;
-    }
-
-    80% {
         background: var(--colorlime);
         color: var(--coloblack);
     }
@@ -1257,7 +1269,7 @@ body {
         opacity: 0;
     }
 
-    80% {
+    40% {
         opacity: 0;
         transform: rotate(0deg);
     }
@@ -1271,15 +1283,18 @@ body {
 
 
 .checkboxconfig:checked~.configcontainer {
-    animation: expandcontaineroptionsconfig 2.5s forwards;
+    animation: expandcontaineroptionsconfig 0.5s forwards;
+    -webkit-animation: expandcontaineroptionsconfig 0.5s forwards;
 }
 
 .checkboxconfig:checked~.config {
-    animation: configoptionanimation 2.5s forwards;
+    animation: configoptionanimation 0.5s forwards;
+    -webkit-animation: configoptionanimation 0.5s forwards;
 }
 
 .checkboxconfig:checked~.config .iconconfig {
-    animation: confiicon 2.5s forwards;
+    animation: confiicon 1s forwards;
+    -webkit-animation: confiicon 1s forwards;
 }
 
 
@@ -1327,7 +1342,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1vh;
-    padding: 0.5vh;
 }
 
 .container-ajustable-text>.ejemplo {
@@ -1495,4 +1509,71 @@ body {
     margin-top: 1vh;
     cursor: pointer;
     border-radius: 1vh;
+}
+
+/*ajustes de contenedores*/
+.conertsystems {
+    height: 100vh;
+}
+
+.containercards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex: 1;
+    max-height: calc(100vh - 20vh);
+    overflow-y: auto;
+    flex-wrap: wrap;
+    padding: 6vh;
+    gap: 6vh;
+}
+
+.containeranuncios {
+    display: flex;
+    max-height: calc(100vh - 20vh);
+    overflow-y: auto;
+    flex-wrap: wrap;
+    padding: 6vh;
+    gap: 6vh;
+    flex: 1;
+}
+
+.containercontacto {
+    display: flex;
+    max-height: calc(100vh - 20vh);
+    padding: 6vh;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.containerinicio {
+    max-height: calc(100vh - 20vh);
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .containeranuncios {
+            padding: 2vh;
+    }
+}
+@media only screen and (max-width: 400) {
+    .containeranuncios {
+            padding: 0.5vh;
+        }
+}
+@media only screen and (max-width: 600px) {
+    .desingmenu {
+        position: absolute;
+    }
+
+    .containerconfiguracion {
+        left: 1vh;
+        bottom: 1vh;
+    }
+
+    .configcontainer {
+        padding: 2vh;
+    }
 }

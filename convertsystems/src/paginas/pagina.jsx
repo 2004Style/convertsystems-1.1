@@ -58,7 +58,7 @@ export function PaginaCs() {
                     <div className="bar bar--2"></div>
                     <div className="bar bar--3"></div>
                 </label>
-                <div className="nombreuser" id="usernamenav">rubencithochavezsuarez3060@gmailcom</div>
+                <div className="nombreuser" id="usernamenav"></div>
             </div>
 
             <div className="containermenucs">
