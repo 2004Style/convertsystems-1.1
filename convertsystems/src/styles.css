@@ -1,45 +1,22 @@
 :root {
-    /*paleta de colores para el tema oscuro
-    --backgroudpagina: #1A1C20;
-    --backgroudmenus: #212529;
-    --colorletrasmenu: #595C5F;
-    --colorhovermenuysubmenu: white;
-    --colorlime: #07df00;
-    --colorwhite: rgb(255, 255, 255)fff;
-    --coloblack: #000000;
-    --color_red: #d80000;
-    --color_orange: #FC4100;
-    --backgroudcopy: #343A40;
-    --colorcopy: #6C757D;
-    --colormarca: rgba(255, 255, 255, 0.3);
-    --backgroundmarca: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, white)) 0 0 no-repeat;
-    --backgroundimagemarca: linear-gradient(-40deg, transparent 0%, transparent 40%, white 50%, transparent 60%, transparent 100%);
-
-    colores temas blancos
-    --backgroudpagina: rgb(235, 235, 235);
-    --backgroudmenus: rgb(0, 80, 94);
-    -colorletrasmenu: rgb(209, 209, 209);
-    --colorhovermenuysubmenu: rgb(0, 0, 0);
-        
-    */
     /*colores basicos de la pagina y menus*/
     --backgroudpagina: rgb(26, 28, 32);
     --backgroudmenus: rgb(33, 37, 41);
-    --colorletrasmenu: rgb(194, 194, 197);
+    --colorletrasmenu: rgb(224, 224, 226);
     --colorhovermenuysubmenu: rgb(0, 143, 168);
     --ancho_del_menu: 33vh;
     --alturavar: 8vh;
     --fontsize_menu: 2.5vh;
     /*colores generales usados*/
-    --colorlime: rgb(7, 223, 0);
+    --colorlime: rgb(225, 156, 1);
     --colorwhite: rgb(255, 255, 255);
     --coloblack: rgb(0, 0, 0);
-    --color_red: rgb(216, 0, 0);
+    --color_red: rgb(0, 107, 188);
     --color_orange: rgb(252, 65, 0);
     --fontsize: 2vh;
     /*estilos para el copy */
     --backgroudcopy: rgb(52, 58, 64);
-    --colorcopy: rgb(108, 117, 125);
+    --colorcopy: rgb(171, 174, 177);
     --alturadelcopy: 10vh;
 
     /*color de la marca de la parte del nav*/
@@ -49,30 +26,51 @@
 
     /*colores usados para inicio*/
     /*colores usados para anuncios*/
+    --anuncios_boton_background: rgb(225, 156, 1);
+    --anuncios_boton_color: rgb(255, 255, 255);
+    --anuncioscolortext: rgb(255, 255, 255);
 
     /*color de las estrellas*/
-    --estrellas_pintadas: rgb(255, 187, 0);
-    --estrellas_despintadas: rgb(255, 255, 255);
+    --estrellas_pintadas: rgb(1, 153, 254);
+    --estrellas_despintadas: rgb(199, 199, 199);
     /*tamaño de las cartas*/
     --alturadecards: 57vh;
     --anchodecards: 40vh;
     /*colores generales para todas las cartas*/
-    --boxshadowdecartas: 0 1vh 1.5vh rgba(0, 0, 0, 0.55);
+    --boxshadowdecartas: 0 1vh 1.5vh rgba(0, 0, 0, 0.872);
     --backgrounddecartas: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
-    --cards_color_lime: rgb(7, 223, 0);
+    --cards_color_lime: rgb(225, 156, 1);
     --cards_color_white: rgb(255, 255, 255);
     --cards_color_black: rgb(0, 0, 0);
+
     /*colores exclusivos para la carta ventas*/
     --card_ventas_hover_aqui_mismo: color-mix(in srgb, var(--cards_color_lime) 70%, white);
+
     /*colores exclisivos para ventas y ofertas*/
     --card_ventas_ofertas_degradado_oscuro: color-mix(in srgb, var(--cards_color_lime) 25%, black);
+    --card_ofertas_porcentaje: white;
+
     /*colores exclusivos para la carta ofertas*/
-    --card_ofertas_color_red: rgb(216, 0, 0);
+    --card_ofertas_color_red: rgb(0, 107, 188);
+
     /*colores exclisivos para proximamente y ofertas*/
-    --card_ofertas_color_orange: rgb(252, 65, 0);
+    --card_ofertas_color_empresa: rgb(225, 156, 1);
+    --card_ofertas_color_orange: rgb(72, 125, 203);
+    --card_ofertas_color_informacion: rgb(255, 255, 255);
+
     /*colores exclusivos para la carta proximamente*/
     --card_proximamente_hover: rgb(4, 134, 255);
+
     /*colores usados para contactanos*/
+    --contacto_color_seleccionado: rgb(225, 156, 1);
+    --contacto_color: rgb(255, 255, 255);
+    --contacto_background: rgb(41, 41, 41);
+    /*colores para accesibilidad*/
+
+    --accesibilida_backgroun: rgb(225, 156, 1);
+    --accesibilida_icono: rgb(0, 0, 0);
+    --accesibilida_backgroun_activo: rgb(0, 107, 188);
+    --accesibilida_icono_activo: rgb(255, 255, 255);
 }
 
 *{
@@ -264,6 +262,7 @@ body {
     width: 0vh;
     z-index: 99;
     transition: width 0.5s ease;
+    font-weight: bold;
 }
 
 .desingmenu.hidden {
@@ -337,7 +336,7 @@ body {
 .contenedoranucios {
     width: 100%;
     gap: 6vh;
-    color: var(--colorwhite);
+    color: var(--anuncioscolortext);
 }
 
 .acabecera {
@@ -357,7 +356,6 @@ body {
 }
 
 .anombre {
-    color: var(--colorwhite);
     font-size: 3.7vh;
     font-weight: 600;
     padding-top: 0.3vh;
@@ -370,8 +368,8 @@ body {
 
 .btniracomprar {
     display: inline-block;
-    background-color: var(--colorlime);
-    color: var(--colorwhite);
+    background-color: var(--anuncios_boton_background);
+    color: var(--anuncios_boton_color);
     text-align: center;
     font-size: 2vh;
     padding: 1.5vh 1.5vh 1.5vh 0vh;
@@ -414,7 +412,7 @@ body {
 
 @keyframes pulse512 {
     0% {
-        box-shadow: 0 0 0 0 var(--colorlime);
+        box-shadow: 0 0 0 0 var(--anuncios_boton_background);
     }
 
     70% {
@@ -429,7 +427,7 @@ body {
 .linea-divisora {
     border: none;
     height: 2px;
-    background-color: var(--colorwhite);
+    background-color: var(--anuncioscolortext);
     margin: 20px 0;
 }
 
@@ -494,7 +492,7 @@ body {
     height: 0.3vh;
     left: 0;
     transform: translateY(-50%);
-    background: linear-gradient(to left, rgb(255, 0, 255), rgb(255, 0, 127), rgb(255, 0, 0), rgb(255, 127, 0), rgb(255, 255, 0), rgb(127, 255, 0), rgb(0, 255, 0), rgb(0, 255, 127), rgb(0, 255, 255), rgb(0, 127, 255), rgb(0, 0, 255), rgb(127, 0, 255), rgb(255, 0, 255));
+    background: linear-gradient(to left, rgb(255, 0, 255), rgb(255, 0, 127), rgb(0, 107, 188), rgb(255, 127, 0), rgb(255, 255, 0), rgb(127, 255, 0), rgb(0, 255, 0), rgb(0, 255, 127), rgb(0, 255, 255), rgb(0, 127, 255), rgb(0, 0, 255), rgb(127, 0, 255), rgb(255, 0, 255));
     background-size: 300% 100%;
     animation: neonLine 6s linear infinite;
 }
@@ -518,7 +516,7 @@ body {
 .acontenidoenlacesi {
     padding-left: 3vh;
     text-decoration: none;
-    color: var(--colorwhite);
+    color: var(--anuncioscolortext);
     font-weight: bold;
 }
 
@@ -601,7 +599,7 @@ body {
 .wrapper .tiktok:hover,
 .wrapper .tiktok:hover .tooltip,
 .wrapper .tiktok:hover .tooltip::before {
-    background: rgb(255, 0, 0);
+    background: rgb(0, 107, 188);
     color: rgb(255, 255, 255);
 }
 
@@ -627,6 +625,7 @@ body {
     align-items: center;
     z-index: 1000;
 }
+
 
 /* Estilos para el contenedor del modal */
 .payment-modal {
@@ -698,7 +697,6 @@ body {
     cursor: pointer;
 }
 /*diseño de las cartas de los productos*/
-/*diseño del contenedor de los productos*/
 /*diseño del contenedor de todo el contenedor de producto*/
 .containerproductcard {
     font-size: 2.7vh;
@@ -975,6 +973,7 @@ body {
 .plcard-top-para {
     font-size: 3vh;
     font-weight: bold;
+    color: var(--card_ofertas_color_empresa);
 }
 
 .plcardcontainer:hover>.plcard {
@@ -1054,6 +1053,7 @@ body {
 .information {
     margin: 2.5vh;
     height: 44.5vh;
+    color: var(--card_ofertas_color_informacion);
 }
 
 .plicons {
@@ -1113,6 +1113,7 @@ body {
 }
 
 .odescuento {
+    color: var(--card_ofertas_porcentaje);
     position: absolute;
     display: flex;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -1239,7 +1240,7 @@ body {
     left: 0;
     z-index: 300;
     transform: rotate(90deg);
-    background: var(--colorlime);
+    background: var(--accesibilida_backgroun);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1247,7 +1248,7 @@ body {
     border-radius: 50%;
     padding: 2vh;
     cursor: pointer;
-    color: var(--coloblack);
+    color: var(--accesibilida_icono);
     animation: iconrotateconfig 2s linear infinite;
 }
 
@@ -1329,16 +1330,16 @@ body {
         height: calc(50vh - 4vh);
         width: calc(50vh - 4vh);
         border-radius: 0%;
-        background: var(--colorlime);
-        color: var(--coloblack);
+        background: var(--accesibilida_backgroun);
+        color: var(--accesibilida_icono);
     }
 
     100% {
         z-index: 100;
         height: 4vh;
         width: 4vh;
-        background: var(--color_red);
-        color: var(--colorwhite);
+        background: var(--accesibilida_backgroun_activo);
+        color: var(--accesibilida_icono_activo);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1495,12 +1496,12 @@ body {
 /*diseño del apartado de contacto*/
 .contactform {
     position: relative;
-    background: linear-gradient(rgb(33, 33, 33), rgb(33, 33, 33)) padding-box,
-        linear-gradient(145deg, transparent 35%, lime, rgb(0, 112, 139)) border-box;
+    background: linear-gradient(var(--contacto_background), var(--contacto_background)) padding-box,
+        linear-gradient(145deg, transparent 25%, rgb(255, 219, 1), rgb(0, 126, 246)) border-box;
     border: 0.3vh solid transparent;
     padding: 5vh;
     font-size: 3vh;
-    color: white;
+    color: var(--contacto_color);
     display: flex;
     flex-direction: column;
     gap: 1.5vh;
@@ -1552,7 +1553,7 @@ body {
 .contactform .contactformgrup .imputcontact {
     padding: 2vh;
     border-radius: 1vh;
-    color: rgb(255, 255, 255);
+    color: var(--contacto_color_seleccionado);
     background-color: transparent;
     border: 0.2vh solid rgb(65, 65, 65);
     font-size: 2vh;
@@ -1561,7 +1562,7 @@ body {
 .contactform .contactformgrup .textareacontac {
     padding: 2vh;
     border-radius: 2vh;
-    color: rgb(255, 255, 255);
+    color: var(--contacto_color_seleccionado);
     height: 36vh;
     border: 0.2vh solid rgb(65, 65, 65);
     background-color: transparent;
@@ -1574,12 +1575,12 @@ body {
 
 .contactform .contactformgrup .imputcontact:focus {
     outline: none;
-    border-color: lime;
+    border-color: var(--contacto_color_seleccionado);
 }
 
 .contactform .contactformgrup .textareacontac:focus {
     outline: none;
-    border-color: lime;
+    border-color: var(--contacto_color_seleccionado);
 }
 
 .contactform .btnenviarcorreo {

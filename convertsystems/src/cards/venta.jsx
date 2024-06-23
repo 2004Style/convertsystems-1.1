@@ -40,7 +40,7 @@ export function VentaCard({ Id, Nombre, Precio, Direccion, DireccionAnuncio }) {
                 </button>
             </div>
             {modalVisible && (
-                <OpcionesDePagos closeModal={closeModal} />
+                <OpcionesDePagos closeModal={closeModal} producto={nombremostrado} precio={preciomostrado} />
             )}
         </div>
     );
@@ -83,7 +83,7 @@ export function VentaCardOld({ Id, Nombre, Precio, Direccion, DireccionAnuncio }
                 </button>
             </div>
             {modalVisible && (
-                <OpcionesDePagos closeModal={closeModal} />
+                <OpcionesDePagos closeModal={closeModal} producto={nombremostrado}precio={preciomostrado} />
             )}
         </div>
     );

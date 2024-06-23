@@ -57,7 +57,7 @@ export function OfertCard({ Id, Nombre, Porcentaje, Dias, Horas, Minutos, Precio
             
         </div>
         {modalVisible && (
-                <OpcionesDePagos closeModal={closeModal} />
+                <OpcionesDePagos closeModal={closeModal} producto={nombremostrado} precio={PrecioDescuento.toFixed(2)} />
             )}
         </>
     );
