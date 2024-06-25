@@ -68,6 +68,7 @@ export function DesingConfig({ labelClass }) {
                         <CambiarPropiedades
                             nombre='oscuro'
                             propiedades={[
+                                /*
                                 { variable: '--backgroudpagina', color: 'rgb(26, 28, 32)' },
                                 { variable: '--backgroudmenus', color: 'rgb(33, 37, 41)' },
                                 { variable: '--colorletrasmenu', color: 'rgb(194, 194, 197)' },
@@ -114,11 +115,13 @@ export function DesingConfig({ labelClass }) {
                                 { variable: '--accesibilida_icono', color: 'rgb(0, 0, 0)' },
                                 { variable: '--accesibilida_backgroun_activo', color: 'rgb(255, 0, 0)' },
                                 { variable: '--accesibilida_icono_activo', color: 'rgb(255, 255, 255)' }
+                                */
                             ]}
                         />
                         <CambiarPropiedades
                             nombre='claro'
                             propiedades={[
+                                /*
                                 { variable: '--backgroudpagina', color: 'rgb(185, 185, 185)' },
                                 { variable: '--backgroudmenus', color: 'rgb(0, 80, 94)' },
                                 { variable: '--colorletrasmenu', color: 'rgb(209, 209, 209)' },
@@ -165,12 +168,14 @@ export function DesingConfig({ labelClass }) {
                                 { variable: '--accesibilida_icono', color: 'rgb(0, 0, 0)' },
                                 { variable: '--accesibilida_backgroun_activo', color: 'rgb(255, 0, 0)' },
                                 { variable: '--accesibilida_icono_activo', color: 'rgb(255, 255, 255)' }
+                                */
                             ]}
                         />
 
                         <CambiarPropiedades
                             nombre='Protanopia'
                             propiedades={[
+                                /*
                                 { variable: '--backgroudpagina', color: 'rgb(26, 28, 32)' },
                                 { variable: '--backgroudmenus', color: 'rgb(33, 37, 41)' },
                                 { variable: '--colorletrasmenu', color: 'rgb(194, 194, 197)' },
@@ -188,7 +193,7 @@ export function DesingConfig({ labelClass }) {
                                 { variable: '--colorcopy', color: 'rgb(108, 117, 125)' },
                                 { variable: '--alturadelcopy', color: '10vh' },
                                 { variable: '--colormarca', color: 'rgba(255, 255, 255, 0.418)' },
-                                { variable: '--backgroundmarca', color: 'rgb(34, 34, 34)' },
+                                { variable: '--backgroundmarca', color: 'rgb(34, 34, 34) -webkit-gradient(linear, left top, right top, from(rgb(34, 34, 34)), to(rgb(34, 34, 34)), color-stop(0.5, white)) 0 0 no-repeat' },
                                 { variable: '--backgroundimagemarca', color: 'linear-gradient(-40deg, transparent 0%, transparent 40%, white 50%, transparent 60%, transparent 100%)' },
                                 { variable: '--anuncios_boton_background', color: 'rgb(253, 226, 0)' },
                                 { variable: '--anuncios_boton_color', color: 'rgb(0, 0, 0)' },
@@ -217,12 +222,14 @@ export function DesingConfig({ labelClass }) {
                                 { variable: '--accesibilida_icono', color: 'rgb(0, 0, 0)' },
                                 { variable: '--accesibilida_backgroun_activo', color: 'rgb(150, 128, 6)' },
                                 { variable: '--accesibilida_icono_activo', color: 'rgb(255, 255, 255)' }
+                                */
                             ]}
                         />
 
                         <CambiarPropiedades
                             nombre='Deuteranopia'
                             propiedades={[
+                                /*
                                 { variable: '--backgroudpagina', color: 'rgb(26, 28, 32)' },
                                 { variable: '--backgroudmenus', color: 'rgb(33, 37, 41)' },
                                 { variable: '--colorletrasmenu', color: 'rgb(224, 224, 226)' },
@@ -240,7 +247,7 @@ export function DesingConfig({ labelClass }) {
                                 { variable: '--colorcopy', color: 'rgb(171, 174, 177)' },
                                 { variable: '--alturadelcopy', color: '10vh' },
                                 { variable: '--colormarca', color: 'rgba(255, 255, 255, 0.418)' },
-                                { variable: '--backgroundmarca', color: 'rgb(34, 34, 34)' },
+                                { variable: '--backgroundmarca', color: 'rgb(34, 34, 34) -webkit-gradient(linear, left top, right top, from(rgb(34, 34, 34)), to(rgb(34, 34, 34)), color-stop(0.5, white)) 0 0 no-repeat' },
                                 { variable: '--backgroundimagemarca', color: 'linear-gradient(-40deg, transparent 0%, transparent 40%, white 50%, transparent 60%, transparent 100%)' },
                                 { variable: '--anuncios_boton_background', color: 'rgb(225, 156, 1)' },
                                 { variable: '--anuncios_boton_color', color: 'rgb(255, 255, 255)' },
@@ -269,12 +276,14 @@ export function DesingConfig({ labelClass }) {
                                 { variable: '--accesibilida_icono', color: 'rgb(0, 0, 0)' },
                                 { variable: '--accesibilida_backgroun_activo', color: 'rgb(0, 107, 188)' },
                                 { variable: '--accesibilida_icono_activo', color: 'rgb(255, 255, 255)' }
+                                */
                             ]}
                         />
 
                         <CambiarPropiedades
                             nombre='Tritanopia'
                             propiedades={[
+                                /*
                                 { variable: '--backgroudpagina', color: 'rgb(1, 145, 158)' },
                                 { variable: '--backgroudmenus', color: 'rgb(4, 83, 94)' },
                                 { variable: '--colorletrasmenu', color: 'rgb(231, 231, 231)' },
@@ -292,7 +301,7 @@ export function DesingConfig({ labelClass }) {
                                 { variable: '--colorcopy', color: 'rgb(159, 160, 161)' },
                                 { variable: '--alturadelcopy', color: '10vh' },
                                 { variable: '--colormarca', color: 'rgba(255, 255, 255, 0.418)' },
-                                { variable: '--backgroundmarca', color: 'rgb(255, 0, 0)' },
+                                { variable: '--backgroundmarca', color: 'rgb(255, 0, 0) -webkit-gradient(linear, left top, right top, from(rgb(34, 34, 34)), to(rgb(34, 34, 34)), color-stop(0.5, white)) 0 0 no-repeat' },
                                 { variable: '--backgroundimagemarca', color: 'linear-gradient(-40deg, transparent 0%, transparent 40%, white 50%, transparent 60%, transparent 100%)' },
                                 { variable: '--anuncios_boton_background', color: 'rgb(247, 109, 116)' },
                                 { variable: '--anuncios_boton_color', color: 'rgb(255, 255, 255)' },
@@ -320,7 +329,7 @@ export function DesingConfig({ labelClass }) {
                                 { variable: '--accesibilida_backgroun', color: 'rgb(1, 238, 255)' },
                                 { variable: '--accesibilida_icono', color: 'rgb(2, 37, 39)' },
                                 { variable: '--accesibilida_backgroun_activo', color: 'rgb(255, 0, 0)' },
-                                { variable: '--accesibilida_icono_activo', color: 'rgb(255, 255, 255)' }
+                                { variable: '--accesibilida_icono_activo', color: 'rgb(255, 255, 255)' }*/
                             ]}
                         />
 
