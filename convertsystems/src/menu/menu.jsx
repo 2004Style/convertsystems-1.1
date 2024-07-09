@@ -47,6 +47,7 @@ export function Menu({ labelClas, setPagina }){
                 ]}
             />
             <OpcionMenu TipoIcono='' Icono='envelope' Nombre="Contactanos" onClick={() => handleClick('contact')} />
+            <OpcionMenu TipoIcono='solid' Icono='chart-line' Nombre="Estadisticas" onClick={() => handleClick('estadisticas')} />
 
             <DesingConfig labelClass={labelClas} />
         </div>

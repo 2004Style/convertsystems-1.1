@@ -10,6 +10,7 @@ import { OfertasContainer } from '../contenedores/ofertas';
 import { VentasContainer } from '../contenedores/ventas';
 import { DescargasContainerPc, DescargasContainerWeb, DescargasContainerConsola} from '../contenedores/descargas';
 import { ContactoContainer } from '../contenedores/contacto';
+import { EstadisticasContainer } from '../contenedores/estadisticas';
 
 
 export function PaginaCs() {
@@ -35,6 +36,8 @@ export function PaginaCs() {
                 return <DescargasContainerWeb />
             case 'freeconsola':
                 return <DescargasContainerConsola/>
+            case 'estadisticas':
+                return <EstadisticasContainer/>
             default:
                 return null;
         }

@@ -68,7 +68,6 @@ export function DesingConfig({ labelClass }) {
                         <CambiarPropiedades
                             nombre='oscuro'
                             propiedades={[
-                                /*
                                 { variable: '--backgroudpagina', color: 'rgb(26, 28, 32)' },
                                 { variable: '--backgroudmenus', color: 'rgb(33, 37, 41)' },
                                 { variable: '--colorletrasmenu', color: 'rgb(194, 194, 197)' },
@@ -115,13 +114,11 @@ export function DesingConfig({ labelClass }) {
                                 { variable: '--accesibilida_icono', color: 'rgb(0, 0, 0)' },
                                 { variable: '--accesibilida_backgroun_activo', color: 'rgb(255, 0, 0)' },
                                 { variable: '--accesibilida_icono_activo', color: 'rgb(255, 255, 255)' }
-                                */
                             ]}
                         />
                         <CambiarPropiedades
                             nombre='claro'
                             propiedades={[
-                                /*
                                 { variable: '--backgroudpagina', color: 'rgb(185, 185, 185)' },
                                 { variable: '--backgroudmenus', color: 'rgb(0, 80, 94)' },
                                 { variable: '--colorletrasmenu', color: 'rgb(209, 209, 209)' },
@@ -144,7 +141,7 @@ export function DesingConfig({ labelClass }) {
                                 { variable: '--anuncios_boton_background', color: 'rgb(0, 36, 104)' },
                                 { variable: '--anuncios_boton_color', color: 'rgb(255, 255, 255)' },
                                 { variable: '--anuncioscolortext', color: 'rgb(0, 0, 0)' },
-                                { variable: '--estrellas_pintadas', color: 'rgb(255, 187, 0)' },
+                                { variable: '--estrellas_pintadas', color: 'rgb(221, 156, 0)' },
                                 { variable: '--estrellas_despintadas', color: 'rgb(129, 129, 129)' },
                                 { variable: '--alturadecards', color: '57vh' },
                                 { variable: '--anchodecards', color: '40vh' },
@@ -168,15 +165,13 @@ export function DesingConfig({ labelClass }) {
                                 { variable: '--accesibilida_icono', color: 'rgb(0, 0, 0)' },
                                 { variable: '--accesibilida_backgroun_activo', color: 'rgb(255, 0, 0)' },
                                 { variable: '--accesibilida_icono_activo', color: 'rgb(255, 255, 255)' }
-                                */
                             ]}
                         />
 
                         <CambiarPropiedades
                             nombre='Protanopia'
                             propiedades={[
-                                /*
-                                { variable: '--backgroudpagina', color: 'rgb(26, 28, 32)' },
+                                { variable: '--backgroudpagina', color: 'rgb(255, 255, 255)' },
                                 { variable: '--backgroudmenus', color: 'rgb(33, 37, 41)' },
                                 { variable: '--colorletrasmenu', color: 'rgb(194, 194, 197)' },
                                 { variable: '--colorhovermenuysubmenu', color: 'rgb(0, 143, 168)' },
@@ -197,14 +192,14 @@ export function DesingConfig({ labelClass }) {
                                 { variable: '--backgroundimagemarca', color: 'linear-gradient(-40deg, transparent 0%, transparent 40%, white 50%, transparent 60%, transparent 100%)' },
                                 { variable: '--anuncios_boton_background', color: 'rgb(253, 226, 0)' },
                                 { variable: '--anuncios_boton_color', color: 'rgb(0, 0, 0)' },
-                                { variable: '--anuncioscolortext', color: 'rgb(255, 255, 255)' },
+                                { variable: '--anuncioscolortext', color: 'rgb(5, 5, 5)' },
                                 { variable: '--estrellas_pintadas', color: 'rgb(255, 187, 0)' },
                                 { variable: '--estrellas_despintadas', color: 'rgb(199, 199, 199)' },
                                 { variable: '--alturadecards', color: '57vh' },
                                 { variable: '--anchodecards', color: '40vh' },
                                 { variable: '--boxshadowdecartas', color: '0 1vh 1.5vh rgba(0, 0, 0, 0.872)' },
                                 { variable: '--backgrounddecartas', color: 'linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%)' },
-                                { variable: '--cards_color_lime', color: 'rgb(0, 80, 172)' },
+                                { variable: '--cards_color_lime', color: 'rgb(179, 255, 0)' },
                                 { variable: '--cards_color_white', color: 'rgb(255, 255, 255)' },
                                 { variable: '--cards_color_black', color: 'rgb(0, 0, 0)' },
                                 { variable: '--card_ventas_hover_aqui_mismo', color: 'color-mix(in srgb, var(--cards_color_lime) 70%, white)' },
@@ -222,15 +217,13 @@ export function DesingConfig({ labelClass }) {
                                 { variable: '--accesibilida_icono', color: 'rgb(0, 0, 0)' },
                                 { variable: '--accesibilida_backgroun_activo', color: 'rgb(150, 128, 6)' },
                                 { variable: '--accesibilida_icono_activo', color: 'rgb(255, 255, 255)' }
-                                */
                             ]}
                         />
 
                         <CambiarPropiedades
                             nombre='Deuteranopia'
                             propiedades={[
-                                /*
-                                { variable: '--backgroudpagina', color: 'rgb(26, 28, 32)' },
+                                { variable: '--backgroudpagina', color: 'rgb(255, 255, 255)' },
                                 { variable: '--backgroudmenus', color: 'rgb(33, 37, 41)' },
                                 { variable: '--colorletrasmenu', color: 'rgb(224, 224, 226)' },
                                 { variable: '--colorhovermenuysubmenu', color: 'rgb(0, 143, 168)' },
@@ -251,7 +244,7 @@ export function DesingConfig({ labelClass }) {
                                 { variable: '--backgroundimagemarca', color: 'linear-gradient(-40deg, transparent 0%, transparent 40%, white 50%, transparent 60%, transparent 100%)' },
                                 { variable: '--anuncios_boton_background', color: 'rgb(225, 156, 1)' },
                                 { variable: '--anuncios_boton_color', color: 'rgb(255, 255, 255)' },
-                                { variable: '--anuncioscolortext', color: 'rgb(255, 255, 255)' },
+                                { variable: '--anuncioscolortext', color: 'rgb(5, 5, 5)' },
                                 { variable: '--estrellas_pintadas', color: 'rgb(1, 153, 254)' },
                                 { variable: '--estrellas_despintadas', color: 'rgb(199, 199, 199)' },
                                 { variable: '--alturadecards', color: '57vh' },
@@ -276,15 +269,13 @@ export function DesingConfig({ labelClass }) {
                                 { variable: '--accesibilida_icono', color: 'rgb(0, 0, 0)' },
                                 { variable: '--accesibilida_backgroun_activo', color: 'rgb(0, 107, 188)' },
                                 { variable: '--accesibilida_icono_activo', color: 'rgb(255, 255, 255)' }
-                                */
                             ]}
                         />
 
                         <CambiarPropiedades
                             nombre='Tritanopia'
                             propiedades={[
-                                /*
-                                { variable: '--backgroudpagina', color: 'rgb(1, 145, 158)' },
+                                { variable: '--backgroudpagina', color: 'rgb(78, 168, 177)' },
                                 { variable: '--backgroudmenus', color: 'rgb(4, 83, 94)' },
                                 { variable: '--colorletrasmenu', color: 'rgb(231, 231, 231)' },
                                 { variable: '--colorhovermenuysubmenu', color: 'rgb(253, 181, 190)' },
@@ -312,15 +303,15 @@ export function DesingConfig({ labelClass }) {
                                 { variable: '--anchodecards', color: '40vh' },
                                 { variable: '--boxshadowdecartas', color: '0 1vh 1.5vh rgba(2, 37, 39, 0.877)' },
                                 { variable: '--backgrounddecartas', color: 'linear-gradient(170deg, rgba(1, 78, 82, 0.479) 0%, rgb(0, 58, 61) 100%)' },
-                                { variable: '--cards_color_lime', color: 'rgb(252, 109, 118)' },
+                                { variable: '--cards_color_lime', color: 'rgb(211, 24, 37)' },
                                 { variable: '--cards_color_white', color: 'rgb(255, 255, 255)' },
                                 { variable: '--cards_color_black', color: 'rgb(2, 37, 39)' },
                                 { variable: '--card_ventas_hover_aqui_mismo', color: 'color-mix(in srgb, var(--cards_color_lime) 70%, white)' },
                                 { variable: '--card_ventas_ofertas_degradado_oscuro', color: 'color-mix(in srgb, var(--cards_color_lime) 25%, black)' },
                                 { variable: '--card_ofertas_porcentaje', color: 'white' },
-                                { variable: '--card_ofertas_color_red', color: 'rgb(251, 70, 72)' },
+                                { variable: '--card_ofertas_color_red', color: 'rgb(109, 186, 236)' },
                                 { variable: '--card_ofertas_color_empresa', color: 'rgb(1, 238, 255)' },
-                                { variable: '--card_ofertas_color_orange', color: 'rgb(253, 181, 190)' },
+                                { variable: '--card_ofertas_color_orange', color: 'rgb(14, 151, 185)' },
                                 { variable: '--card_ofertas_color_informacion', color: 'rgb(255, 255, 255)' },
                                 { variable: '--card_proximamente_hover', color: 'rgb(4, 134, 255)' },
                                 { variable: '--contacto_color_seleccionado', color: 'rgb(1, 238, 255)' },
@@ -329,7 +320,7 @@ export function DesingConfig({ labelClass }) {
                                 { variable: '--accesibilida_backgroun', color: 'rgb(1, 238, 255)' },
                                 { variable: '--accesibilida_icono', color: 'rgb(2, 37, 39)' },
                                 { variable: '--accesibilida_backgroun_activo', color: 'rgb(255, 0, 0)' },
-                                { variable: '--accesibilida_icono_activo', color: 'rgb(255, 255, 255)' }*/
+                                { variable: '--accesibilida_icono_activo', color: 'rgb(255, 255, 255)' }
                             ]}
                         />
 

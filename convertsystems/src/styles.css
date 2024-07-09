@@ -73,7 +73,7 @@
     --accesibilida_icono_activo: rgb(255, 255, 255);
 }
 
-*{
+* {
     font-family: system-ui,
         -apple-system,
         "Segoe UI",
@@ -360,6 +360,7 @@ body {
     font-weight: 600;
     padding-top: 0.3vh;
     padding-left: 0.5vh;
+    color: var(--anuncioscolortext);
 }
 
 .acontainereyd {
@@ -435,6 +436,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 4vh;
+    font-size: var(--fontsize);
 }
 
 @media (max-width: 700px) {
@@ -693,9 +695,11 @@ body {
     margin-right: 5px;
     font-size: 1.2rem;
 }
-.mpclose{
+
+.mpclose {
     cursor: pointer;
 }
+
 /*diseño de las cartas de los productos*/
 /*diseño del contenedor de todo el contenedor de producto*/
 .containerproductcard {
@@ -1051,8 +1055,12 @@ body {
 }
 
 .information {
+    text-align: center;
     margin: 2.5vh;
     height: 44.5vh;
+    width: 35vh;
+    overflow: hidden;
+    font-size: var(--fontsize);
     color: var(--card_ofertas_color_informacion);
 }
 
@@ -1255,7 +1263,7 @@ body {
 .config:hover {
     /*animation-play-state: paused;*/
     animation: iconrotateconfig 4s linear infinite;
-    
+
 }
 
 @keyframes iconrotateconfig {
@@ -1300,12 +1308,15 @@ body {
         height: calc(50vh - 6vh);
         width: calc(50vh - 6vh);
     }
-    49%{
+
+    49% {
         opacity: 0;
     }
-    50%{
+
+    50% {
         opacity: 1;
     }
+
     100% {
         height: calc(50vh - 6vh);
         width: calc(50vh - 6vh);
@@ -1639,16 +1650,32 @@ body {
     width: 100%;
 }
 
+.containerestadisticas {
+    display: flex;
+    max-height: calc(100vh - 20vh);
+    overflow-y: auto;
+    flex-wrap: wrap;
+    padding: 6vh;
+    gap: 20vh;
+    flex: 1;
+}
+
 @media only screen and (max-width: 767px) {
     .containeranuncios {
-            padding: 2vh;
+        padding: 2vh;
     }
 }
+
 @media only screen and (max-width: 400) {
     .containeranuncios {
-            padding: 0.5vh;
-        }
+        padding: 0.5vh;
+    }
+
+    .containerestadisticas {
+        padding: 0.5vh;
+    }
 }
+
 @media only screen and (max-width: 600px) {
     .desingmenu {
         position: absolute;

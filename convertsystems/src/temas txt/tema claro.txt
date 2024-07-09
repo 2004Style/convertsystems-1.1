@@ -1,0 +1,67 @@
+:root {
+    /*colores basicos de la pagina y menus*/
+    --backgroudpagina: rgb(185, 185, 185);
+    --backgroudmenus: rgb(0, 80, 94);
+    --colorletrasmenu: rgb(209, 209, 209);
+    --colorhovermenuysubmenu: rgb(250, 46, 0);
+    --ancho_del_menu: 33vh;
+    --alturavar: 8vh;
+    --fontsize_menu: 2.5vh;
+    /*colores generales usados*/
+    --colorlime: rgb(7, 223, 0);
+    --colorwhite: rgb(255, 255, 255);
+    --coloblack: rgb(0, 0, 0);
+    --color_red: rgb(216, 0, 0);
+    --color_orange: rgb(252, 65, 0);
+    --fontsize: 2vh;
+    /*estilos para el copy */
+    --backgroudcopy: rgb(52, 58, 64);
+    --colorcopy: rgb(108, 117, 125);
+    --alturadelcopy: 10vh;
+
+    /*color de la marca de la parte del nav*/
+    --colormarca: rgba(255, 255, 255, 0.418);
+    --backgroundmarca: rgb(34, 34, 34) -webkit-gradient(linear, left top, right top, from(rgb(34, 34, 34)), to(rgb(34, 34, 34)), color-stop(0.5, white)) 0 0 no-repeat;
+    --backgroundimagemarca: linear-gradient(-40deg, transparent 0%, transparent 40%, white 50%, transparent 60%, transparent 100%);
+
+    /*colores usados para inicio*/
+    /*colores usados para anuncios*/
+--anuncios_boton_background:rgb(0, 36, 104);
+    --anuncios_boton_color: rgb(255, 255, 255);
+    --anuncioscolortext:rgb(0,0,0);
+
+    /*color de las estrellas*/
+    --estrellas_pintadas: rgb(221, 156, 0)';
+    --estrellas_despintadas: rgb(129, 129, 129);
+    /*tamaño de las cartas*/
+    --alturadecards: 57vh;
+    --anchodecards: 40vh;
+    /*colores generales para todas las cartas*/
+    --boxshadowdecartas: 0 1vh 1.5vh rgba(0, 0, 0, 0.872);
+    --backgrounddecartas: linear-gradient(170deg, rgba(255, 254, 254, 0.623) 0%, rgb(201, 201, 201) 100%);
+    --cards_color_lime: rgb(0, 115, 197);
+    --cards_color_white: rgb(0, 0, 0);
+    --cards_color_black: rgb(0, 0, 0);
+    /*colores exclusivos para la carta ventas*/
+    --card_ventas_hover_aqui_mismo: color-mix(in srgb, var(--cards_color_lime) 70%, white);
+    /*colores exclisivos para ventas y ofertas*/
+    --card_ventas_ofertas_degradado_oscuro: color-mix(in srgb, var(--cards_color_lime) 25%, black);
+    --card_ofertas_porcentaje:white;
+    /*colores exclusivos para la carta ofertas*/
+    --card_ofertas_color_red: rgb(216, 0, 0);
+    /*colores exclisivos para proximamente y ofertas*/
+    --card_ofertas_color_empresa: rgb(0, 97, 114);
+    --card_ofertas_color_orange: rgb(0, 124, 17);
+    --card_ofertas_color_informacion:rgb(0, 0, 0);
+    /*colores exclusivos para la carta proximamente*/
+    --card_proximamente_hover: rgb(4, 134, 255);
+    /*colores usados para contactanos*/
+    --contacto_color_seleccionado: rgb(0, 36, 104);
+    --contacto_color: rgb(0, 0, 0);
+    --contacto_background: rgb(221, 221, 221);
+    /*colores para accesibilidad*/
+    --accesibilida_backgroun:rgb(252, 65, 0);
+    --accesibilida_icono:rgb(0, 0, 0);
+    --accesibilida_backgroun_activo:rgb(255, 0, 0);
+    --accesibilida_icono_activo:rgb(255, 255, 255);
+}
